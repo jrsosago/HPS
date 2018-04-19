@@ -3,14 +3,16 @@ package com.poli.hspmngr.services;
 import com.poli.hspmngr.dto.AccountDto;
 import com.poli.hspmngr.model.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AccountServiceImpl implements AccountService {
 
     @Autowired
     AccountRepository accountRepository;
 
     @Override
-    public Boolean saveAccount (AccountDto accountDto) throws Exception {
+    public Boolean saveAccount (AccountDto accountDto) {
         Boolean accountCreated = false;
         try {
             accountRepository.save(accountDto);
@@ -22,10 +24,10 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public AccountDto getAccount (String user, String pass) throws Exception {
+    public AccountDto getAccount (String user, String pass) {
         AccountDto accountDto = null;
         try {
-            accountDto = accountRepository.findAccountDtoByUserAndPass(user, pass);
+            accountDto = accountRepository.findAccountDtoByUsernameAndPassword(user, pass);
         } catch (Exception e) {
             e.printStackTrace();
         }
