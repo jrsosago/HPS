@@ -4,10 +4,9 @@
     <p>INGRESE SU USUARIO Y CONTRASEÑA</p>
 
     <p>Usuario</p>
-    <input type="text" class="user" placeholder="Usuario">
-    
+    <input type="text" class="user" placeholder="Usuario" [(ngModel)]="user">
     <p>Contraseña</p>
-    <input type="password" class="pass" placeholder="Contraseña">
+    <input type="password" class="pass" placeholder="Contraseña" [(ngModel)]="pass">
 
-    <button class="button" (click)='onClick()'>INICIAR</button>
+    <button class="button" (click)='tryLogin()'>INICIAR</button>
 </div>

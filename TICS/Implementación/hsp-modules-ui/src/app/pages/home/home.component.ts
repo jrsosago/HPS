@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+import { HspService } from '../../services/hsp.service';
 
 @Component({
   selector: 'hsp-home',
@@ -7,13 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  user;
+  pass;
+
+  constructor(
+    private http: Http,
+    private hspService: HspService
+  ) { }
 
   ngOnInit() {
   }
 
-  onClick() {
-    console.log('Click on button');
+  tryLogin() {
+    this.hspService.getAccount(this.user, this.pass).subscribe(response => {
+      const account = response;
+      console.log(account);
+    });
   }
-
 }
