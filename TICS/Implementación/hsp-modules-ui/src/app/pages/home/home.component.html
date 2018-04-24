@@ -1,12 +1,30 @@
-<div class="container">
-    <img src="../../../assets/images/hsp-logo.png">
-    <p class="welcome">BIENVENIDO A HSP</p>
-    <p>INGRESE SU USUARIO Y CONTRASEÑA</p>
+<div class="login-container">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-hsp" width="200" src="../../../assets/images/hsp-logo.png">
+        </div>
+        <div class="col-md-6 login">
+            <p class="welcome">BIENVENIDO A HSP</p>
+            
+            <div class="form-group">
+                <label class="col-md-4 offset-md-2 control-label" for="user">Usuario</label>  
+                <div class="col-md-8 offset-md-2">
+                    <input id="user" name="user" type="text" placeholder="Usuario" class="form-control input-md user" [(ngModel)]="user">
+                </div>
+            </div>
 
-    <p>Usuario</p>
-    <input type="text" class="user" placeholder="Usuario" [(ngModel)]="user">
-    <p>Contraseña</p>
-    <input type="password" class="pass" placeholder="Contraseña" [(ngModel)]="pass">
+            <div class="form-group">
+                <label class="col-md-4 offset-md-2 control-label" for="pass">Contraseña</label>  
+                <div class="col-md-8 offset-md-2">
+                    <input id="pass" name="pass" type="pass" placeholder="Contraseña" class="form-control input-md pass" [(ngModel)]="pass">
+                </div>
+            </div>
 
-    <button class="button" (click)='tryLogin()'>INICIAR</button>
+            <div class="form-group">
+                <div class="col-md-8 offset-md-2 btn-div">
+                    <button id="btnSubmit" name="btnSubmit" class="btn btn-primary button" (click)='tryLogin()'>Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-.container{
+/*.container{
     background: white;
     max-width: 50%;
     border-radius: 10%;
@@ -17,4 +17,31 @@
         border-radius: 5px;
         text-align: center;
     }
+}*/
+
+.login-container{
+    text-align: center;
+    padding: 10% 0;
+}
+
+.img-hsp{
+    border-radius: 50px;
+}
+
+.login{
+    text-align: left;
+}
+
+.login .welcome{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-div{
+    text-align: center;
+}
+
+label{
+    color: #fff;
 }
