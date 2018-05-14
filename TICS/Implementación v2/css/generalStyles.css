@@ -1,0 +1,20 @@
+*{margin:0;padding:0}
+html{height:100%;}
+body{font-size:14px;height:100%;margin:0;background-repeat:no-repeat;background-attachment:fixed;background:linear-gradient(to bottom right,#00f894,#0099fb)}
+.label-input{font-weight:600}
+.hide{display:none}
+/************** NAV STYLES *************/
+.nav{margin-top:1%;border-radius:30px;background:rgba(255,255,255,0.7)}
+.nav .hsp-logo{width:70%;border-radius:50%;border:1px solid #c3c3c3}
+.nav h2{color:#097960;font-size:24px;line-height:2;font-weight:600}
+.nav p{color:rgba(0,0,0,0.6);font-size:16px;float:right;line-height:2.5}
+/************ SEARCH INPUT STYLES **********/
+#search{margin-right:5%;background:transparent;border:none;border-bottom:1px solid #ffffff;color:#ffffff}
+.search-group{margin:5% 0px}
+#search-btn{font-weight:bold;border-radius:20px;background:rgba(255,255,255,0.8);color:#17A1A6;padding:5px 10px}
+#upload-btn{font-weight:bold;border-radius:20px;background:rgba(0,0,0,0.5);color:#ffffff;padding:5px 10px}
+#upload-input{display: none}
+/********** MEDIA STYLES *************/
+.media-container{text-align:left !important;margin-bottom:3%;background:#ffffff;border-radius:20px;padding:20px;text-align:center;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.media-title{font-weight:bold}
+.duration{font-size:13px;color:rgba(0, 0, 0, 0.4)}

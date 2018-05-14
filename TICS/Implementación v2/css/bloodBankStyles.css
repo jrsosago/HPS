@@ -1,0 +1,7 @@
+.blood-bank-container,.details-container{margin-top:10%;text-align:center;background:#ffffff;border-radius:20px;padding:30px 20px 20px 20px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.blood-bank-container h2,.details-container h2{color:#17A1A6;font-size:24px;font-weight:bold;text-align:center}
+.blood-bank-container a,.details-container a{text-decoration:none}
+#dotations-table{width:100%;}
+#liters-table{width:70%}
+#dotations-table thead,#liters-table thead{background:rgba(0,0,0,0.4);color:#ffffff}
+#attach-input{display:none}

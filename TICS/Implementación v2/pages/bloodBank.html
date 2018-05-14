@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HSP">
+        <meta name="author" content="jdma04">
+        <title>Banco de Sangre HSP</title>
+        <link href="../libs/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-editable-select.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/generalStyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/bloodBankStyles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper" class="test">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img class="hsp-logo" src="../img/hsp-logo.png">
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>Banco de Sangre</h2>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><span id="connected-user">NOMBRE USUARIO</span> (<a href="">Salir</a>)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row main-row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="blood-bank-container">
+                            <div class="row title-row">
+                                <div class="col-md-12">
+                                    <h2>BANCO DE SANGRE</h2>
+                                </div>
+                                <div class="col-md-12">
+                                    <p>Total actual de donaciones por tipo de sangre:</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <table border="1" id="liters-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Tipo</th>
+                                                <th>Cantidad(L)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>A+</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>A-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>B+</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>B-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>O+</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>O-</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AB+</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AB-</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-5">
+                                    <table border="1" id="dotations-table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="5">PACIENTES</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Sangre</th>
+                                                <th>Correo</th>
+                                                <th>Detalles</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td><a href="#">Ver</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td><a href="#">Ver</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-4">
+                                    <div>
+                                        <canvas id="bloods-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row hide details-row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="details-container">
+                            <div class="row title-row">
+                                <div class="col-md-12">
+                                    <h2>RESUMEN DEL PACIENTE</h2>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><b>Nombre Paciente (A+)</b></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-3">
+                                    <div>
+                                        <canvas id="details-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="../libs/js/jquery.min.js"></script>
+        <script src="../libs/js/jquery-editable-select.min.js"></script>
+        <script src="../libs/js/bootstrap.min.js"></script>
+        <script src="../libs/js/jquery-ui.min.js"></script>
+        <script src="../libs/js/Chart.min.js"></script>
+        <script src="../js/bloodBankLogic.js"></script>
+    </body>
+</html>

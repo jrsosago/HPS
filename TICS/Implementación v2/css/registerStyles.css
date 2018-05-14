@@ -1,0 +1,8 @@
+.hsp-logo{margin-top:1%;display:block;margin-left:auto;margin-right:auto;width:8%;border-radius:50%;border:1px solid #c3c3c3;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.form-container{margin-top:3%;background:#ffffff;border-radius:20px;padding:40px;text-align:center;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.form-container h2{color:#17A1A6;font-size:24px;font-weight:bold}
+.form-container h3{color:rgba(0,0,0,0.6);font-size:16px;margin-bottom:3%}
+.form-container a{display:block;font-size:13px;text-decoration:none}
+#user,#pass,#pass2,#blood-type,#name,#last-name,#birthdate,#rol{border-radius:20px}
+#register{margin-top:3%;font-weight:bold;width:20%;border-radius:20px;background:#17A1A6;padding:5px;color:#ffffff}
+#register:hover{background:#00e0ae}

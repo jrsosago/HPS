@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HSP">
+        <meta name="author" content="jdma04">
+        <title>Chat HSP</title>
+        <link href="../libs/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-editable-select.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/generalStyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/chatStyles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper" class="test">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <img class="hsp-logo" src="../img/hsp-logo.png">
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>Chat</h2>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><span id="connected-user">NOMBRE USUARIO</span> (<a href="">Salir</a>)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="chat-container">
+                            <div class="row title-row">
+                                <div class="col-md-12">
+                                    <h2>CHAT HSP</h2>
+                                </div>
+                            </div>
+                            <div class="row messages-row">
+                                <div class="col-md-12">
+                                    <div id="messages"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn" type="button" id="attach">Adjuntar</button>
+                                    <button class="btn" type="button" id="send">Enviar</button>
+                                    <input type="file" id="attach-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="../libs/js/jquery.min.js"></script>
+        <script src="../libs/js/jquery-editable-select.min.js"></script>
+        <script src="../libs/js/bootstrap.min.js"></script>
+        <script src="../libs/js/jquery-ui.min.js"></script>
+        <script src="../js/chatLogic.js"></script>
+    </body>
+</html>
