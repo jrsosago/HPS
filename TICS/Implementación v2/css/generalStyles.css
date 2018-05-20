@@ -5,7 +5,7 @@ body{font-size:14px;height:100%;margin:0;background-repeat:no-repeat;background-
 .hide{display:none}
 /************** NAV STYLES *************/
 .nav{margin-top:1%;border-radius:30px;background:rgba(255,255,255,0.7)}
-.nav .hsp-logo{width:70%;border-radius:50%;border:1px solid #c3c3c3}
+.nav .hsp-logo{width:70%;border-radius:50%;border:1px solid #c3c3c3;cursor:pointer}
 .nav h2{color:#097960;font-size:24px;line-height:2;font-weight:600}
 .nav p{color:rgba(0,0,0,0.6);font-size:16px;float:right;line-height:2.5}
 /************ SEARCH INPUT STYLES **********/
