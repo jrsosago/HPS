@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HSP">
+        <meta name="author" content="jdma04">
+        <title>Inscripción HSP</title>
+        <link href="../libs/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-editable-select.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/generalStyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/registerStyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/chatStyles.css" rel="stylesheet" type="text/css">
+        
+    </head>
+
+    <body>
+        <div id="wrapper" class="test">
+            <div id="page-wrapper">
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="nav">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <img onclick="window.location.href='main.html'" class="hsp-logo" src="../img/hsp-logo.png">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h2>Inscripción Pacientes para Investigaciones</h2>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p><span id="connected-user">NOMBRE USUARIO</span> (<a href="../index.html">Salir</a>)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="form-container">
+                            <h2>FORMULARIO DE INSCRIPCIÓN</h2>
+                            <h3>INGRESE SUS DATOS</h3>
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-md-6 offset-md-3">
+                                        <div class="form-group blood-type-group">
+                                            <label class="label-input" for="blood-type">Investigaciones activas</label>
+                                            <select name="blood-type" id="blood-type" class="form-control">
+                                                <option>Título de la Investigación 1</option>
+                                                <option>Título de la Investigación 2</option>
+                                                <option>Título de la Investigación 3</option>
+                                                <option>Título de la Investigación 4</option>
+                                                <option>Título de la Investigación 5</option>
+                                                <option>Título de la Investigación 6</option>
+                                            </select>
+                                        </div>
+                                        <div class="row messages-row">
+                                                <div class="col-md-12">
+                                                    <div id="messages">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                                </div>
+                                        </div>
+                                        <div>
+                                            ✓ Acepto <b>Términos y condiciones</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <button type="button" onclick="window.location.href='main.html'" class="btn" id="register">REGISTRO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../libs/js/jquery.min.js"></script>
+        <script src="../libs/js/jquery-editable-select.min.js"></script>
+        <script src="../libs/js/bootstrap.min.js"></script>
+        <script src="../libs/js/jquery-ui.min.js"></script>
+        <script src="../js/registerLogic.js"></script>
+    </body>
+</html>

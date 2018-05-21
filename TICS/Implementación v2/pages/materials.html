@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HSP">
+        <meta name="author" content="jdma04">
+        <title>Materiales HSP</title>
+        <link href="../libs/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-editable-select.min.css" rel="stylesheet" type="text/css">
+        <link href="../libs/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/generalStyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/registerStyles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper" class="test">
+            <div id="page-wrapper">
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="nav">
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <img onclick="window.location.href='main.html'" class="hsp-logo" src="../img/hsp-logo.png">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h2>Materiales y servicios ambientales</h2>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p><span id="connected-user">NOMBRE USUARIO</span> (<a href="../index.html">Salir</a>)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div class="form-container">
+                            <h2>MATERIALES Y SERVICIOS AMBIENTALES</h2>
+                            <h3>SOLICITUD DE PEDIDO</h3>
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-md-6 offset-md-3">
+                                        <div class="form-group blood-type-group">
+                                            <label class="label-input" for="blood-type">Área</label>
+                                            <select name="blood-type" id="blood-type" class="form-control">
+                                                <option>Dirección General</option>
+                                                <option>Banco de Sangre</option>
+                                                <option>Recursos Humanos</option>
+                                                <option>Servicio al usuario</option>
+                                                <option>Tecnología</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group name-group">
+                                            <label class="label-input" for="name">Material o Servicio</label>
+                                            <input class="form-control" name="name" id="name" placeholder="Escriba la descripción">
+                                        </div>
+
+                                        <div class="form-group rol-group">
+                                            <label class="label-input" for="rol">Prioridad</label>
+                                            <select name="rol" id="rol" class="form-control">
+                                                <option>Alta</option>
+                                                <option>Media</option>
+                                                <option>Baja</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group birthdate-group">
+                                                <label class="label-input" for="birthdate">Fecha</label>
+                                                <input class="form-control" name="birthdate" id="birthdate" placeholder="Seleccione fecha">
+                                            </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <button type="button" class="btn" id="register" onclick="window.location.href='requestedMaterials.html'">PEDIDO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../libs/js/jquery.min.js"></script>
+        <script src="../libs/js/jquery-editable-select.min.js"></script>
+        <script src="../libs/js/bootstrap.min.js"></script>
+        <script src="../libs/js/jquery-ui.min.js"></script>
+        <script src="../js/registerLogic.js"></script>
+    </body>
+</html>
